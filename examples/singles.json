@@ -1,0 +1,160 @@
+{
+  "format": "shuttle-tactics",
+  "version": 2,
+  "title": "Kéo cuối sân · mở khoảng trống",
+  "mode": "singles",
+  "names": [
+    "Minh",
+    "An",
+    "Bảo",
+    "Linh"
+  ],
+  "initial": [
+    {
+      "x": 0,
+      "z": 3.2
+    },
+    {
+      "x": 0,
+      "z": -3.2
+    },
+    {
+      "x": 1.8,
+      "z": 4.7
+    },
+    {
+      "x": -1.8,
+      "z": -4.7
+    }
+  ],
+  "steps": [
+    {
+      "hitter": 0,
+      "target": {
+        "x": -1.8,
+        "z": -5.4
+      },
+      "type": "clear",
+      "height": 4.3,
+      "endHeight": 2.2,
+      "duration": 2.4,
+      "landing": false,
+      "breakBefore": false,
+      "end": [
+        {
+          "x": 0.4,
+          "z": 3
+        },
+        {
+          "x": -1.8,
+          "z": -5.4
+        },
+        {
+          "x": 1.8,
+          "z": 4.7
+        },
+        {
+          "x": -1.8,
+          "z": -4.7
+        }
+      ],
+      "note": "Ví dụ minh họa. Kéo người hoặc bấm sân để điều chỉnh."
+    },
+    {
+      "hitter": 1,
+      "target": {
+        "x": 1.7,
+        "z": 1.5
+      },
+      "type": "drop",
+      "height": 0.55,
+      "endHeight": 1.15,
+      "duration": 1.5,
+      "landing": false,
+      "breakBefore": false,
+      "end": [
+        {
+          "x": 1.7,
+          "z": 1.5
+        },
+        {
+          "x": -0.4,
+          "z": -3
+        },
+        {
+          "x": 1.8,
+          "z": 4.7
+        },
+        {
+          "x": -1.8,
+          "z": -4.7
+        }
+      ],
+      "note": "Ví dụ minh họa. Kéo người hoặc bấm sân để điều chỉnh."
+    },
+    {
+      "hitter": 0,
+      "target": {
+        "x": 1.8,
+        "z": -5.5
+      },
+      "type": "lift",
+      "height": 4,
+      "endHeight": 2.2,
+      "duration": 2.3,
+      "landing": false,
+      "breakBefore": false,
+      "end": [
+        {
+          "x": 0.4,
+          "z": 3
+        },
+        {
+          "x": 1.8,
+          "z": -5.5
+        },
+        {
+          "x": 1.8,
+          "z": 4.7
+        },
+        {
+          "x": -1.8,
+          "z": -4.7
+        }
+      ],
+      "note": "Ví dụ minh họa. Kéo người hoặc bấm sân để điều chỉnh."
+    },
+    {
+      "hitter": 1,
+      "target": {
+        "x": -1.8,
+        "z": 4.5
+      },
+      "type": "smash",
+      "height": 0.12,
+      "endHeight": 0.9,
+      "duration": 0.75,
+      "landing": false,
+      "breakBefore": false,
+      "end": [
+        {
+          "x": -1.8,
+          "z": 4.5
+        },
+        {
+          "x": -0.4,
+          "z": -3
+        },
+        {
+          "x": 1.8,
+          "z": 4.7
+        },
+        {
+          "x": -1.8,
+          "z": -4.7
+        }
+      ],
+      "note": "Ví dụ minh họa. Kéo người hoặc bấm sân để điều chỉnh."
+    }
+  ]
+}
