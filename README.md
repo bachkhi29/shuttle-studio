@@ -14,7 +14,7 @@ Shuttle Studio là sa bàn cầu lông 3D để bạn **đặt người chơi, t
 
 ## Dùng thử ngay
 
-- **Bản web (GitHub Pages):** 
+- **Bản web (GitHub Pages):** https://bachkhi29.github.io/shuttle-studio/
 - **Chạy trên máy, không cần mạng:** tải file **`MO_UNG_DUNG.html`** trong repo này (hoặc bản ZIP ở mục Releases), mở bằng Chrome/Edge là dùng ngay. Toàn bộ ứng dụng nằm trong đúng 1 file HTML.
 - **Chạy từ source:** mở `index.html` cùng thư mục với `core.js`, `app.js`, `style.css`.
 
@@ -88,11 +88,6 @@ docs/             Ảnh minh họa cho README
 - Hình 3D vẽ bằng Canvas 2D với phép chiếu tự viết, không dùng WebGL; thứ tự che khuất là xấp xỉ.
 - Chưa xuất video, chưa có chấm luật thi đấu đầy đủ. Thiết bị chính là máy tính; điện thoại xem được nhưng thao tác kéo sẽ khó hơn.
 
-## Đưa lên GitHub Pages (cho chủ repo)
-
-1. Đẩy toàn bộ nội dung thư mục này lên repository (giữ nguyên cấu trúc).
-2. Vào **Settings → Pages → Build and deployment → Source: Deploy from a branch**, chọn nhánh `main`, thư mục `/ (root)`, bấm **Save**.
-3. Chờ 1–2 phút, GitHub cho một đường link dạng `https://<tên-bạn>.github.io/shuttle-studio/` — dán link đó vào mục "Dùng thử ngay" ở đầu README này.
 
 ## Giấy phép
 
