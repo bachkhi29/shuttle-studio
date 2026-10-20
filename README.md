@@ -14,7 +14,7 @@ Shuttle Studio là sa bàn cầu lông 3D để bạn **đặt người chơi, t
 
 ## Dùng thử ngay
 
-- **Bản web (GitHub Pages):** *(chủ repo cập nhật link sau khi bật Pages — xem mục "Đưa lên GitHub Pages" ở cuối)*
+- **Bản web (GitHub Pages):** 
 - **Chạy trên máy, không cần mạng:** tải file **`MO_UNG_DUNG.html`** trong repo này (hoặc bản ZIP ở mục Releases), mở bằng Chrome/Edge là dùng ngay. Toàn bộ ứng dụng nằm trong đúng 1 file HTML.
 - **Chạy từ source:** mở `index.html` cùng thư mục với `core.js`, `app.js`, `style.css`.
 
