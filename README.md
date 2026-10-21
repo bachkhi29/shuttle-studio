@@ -4,7 +4,7 @@
 
 <h1 align="center">Shuttle Studio</h1>
 
-<p align="center"><b>Mô phỏng chiến thuật cầu lông 3D ngay trên trình duyệt — không cần cài đặt, không cần mạng.</b></p>
+<p align="center"><b>Mô phỏng chiến thuật cầu lông 3D ngay trên trình duyệt 
 
 <p align="center">Phiên bản 1.5.0 · Giấy phép MIT · Chạy offline 100%</p>
 
