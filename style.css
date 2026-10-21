@@ -142,3 +142,40 @@ body.focus-mode #focusMode{border-color:var(--mint);color:#c6f1e1}
 .initial.active:hover:not(:disabled){background:#354958;border-color:var(--mint);color:#d6f6e8}
 .dz-tabs button.on:hover:not(:disabled){background:#ffbdd0;border-color:#ffbdd0;color:#291a20}
 .hairbtn.on:hover:not(:disabled){background:#b4ebd7;border-color:#b4ebd7;color:#12312a}
+
+/* 1.7 coaching: one optional panel, annotations travel with the selected phase. */
+.inspector-tabs{grid-template-columns:repeat(3,minmax(0,1fr));gap:2px}
+.inspector-tabs button{padding:6px 3px;font-size:10px;letter-spacing:.35px}
+.viewbar{height:auto;min-height:44px;flex-wrap:wrap;gap:6px}
+.layer-grid{display:grid;gap:10px;border:1px solid #344459;padding:12px;border-radius:8px;margin-bottom:16px}
+.layer-grid .check{font-size:11px}
+.section-label{display:block;text-transform:uppercase;font-size:10px!important;letter-spacing:.7px;margin:14px 0 7px}
+#phaseExplain textarea{resize:vertical;min-height:88px;line-height:1.6}
+#phaseExplain details{padding-top:15px;margin-top:16px}
+#phaseExplain .row{flex-wrap:wrap;gap:6px}
+#phaseExplain .row button{font-size:11px;flex:1}
+.compare-toggle,.contact-option{margin-top:16px}
+.zone-row{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:11px;padding:7px 0;border-bottom:1px solid #2c394c}
+.zone-row button{padding:2px 8px;min-height:27px}
+button[aria-pressed=true]#zoneTarget{background:#58451f;color:#ffe2a1;border-color:#e7bf67}
+button[aria-pressed=true]#zoneSpace{background:#203d59;color:#b8e0ff;border-color:#86c9ff}
+.coach-card{position:absolute;right:16px;bottom:67px;width:min(290px,45%);padding:12px 14px;border:1px solid #64748766;border-left:3px solid #f7a8bc;border-radius:8px;background:#101b2be8;max-height:35%;overflow:auto;box-shadow:0 4px 16px #0002}
+.coach-card span{font-size:9px;font-weight:700;letter-spacing:1px;color:#f7b9cd;text-transform:uppercase}
+.coach-card p{font-size:12px;line-height:1.65;margin:7px 0 0;white-space:pre-wrap;overflow-wrap:anywhere;color:#e4eaf1}
+.compare-badge{position:absolute;right:16px;top:53px;background:#1a2033e8;border:1px solid #766299;color:#d7c6ff;border-radius:6px;padding:5px 9px;font-size:10px;pointer-events:none}
+#contactMenu{font-size:10px;padding:6px 9px}
+body.presentation .workspace{grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr) auto}
+body.presentation .main{grid-row:1}body.presentation .transport{grid-row:2}
+body.presentation .inspector,body.presentation #add,body.presentation #editCurrent,body.presentation .canvas-help,body.presentation #focusMode,body.presentation #projectTitle,body.presentation nav #undo,body.presentation nav #redo,body.presentation nav #open,body.presentation nav #projectButton{display:none!important}
+body.presentation #present{border-color:#92d7bf;background:#183f39;color:#c2f7e2}
+body.presentation .coach-card{max-height:36%;width:min(410px,48%);bottom:44px;padding:16px 20px}
+body.presentation .coach-card p{font-size:18px;line-height:1.6}body.presentation .coach-card span{font-size:11px}
+body.presentation #court{cursor:grab}body.presentation .sequence-hint{font-size:0}
+body.presentation .sequence-hint::after{content:'← / → chuyển pha · Esc thoát';font-size:11px}
+@media(max-width:1050px){#modeBadge{display:none}.viewbar .views:last-child{margin-left:0}.coach-card{width:42%;right:10px;bottom:65px;padding:8px 10px}.coach-card p{font-size:11px}}
+@media(max-width:800px){.inspector-tabs{grid-template-columns:repeat(3,minmax(0,1fr))}.coach-card{bottom:35px;max-height:38%;width:46%}.compare-badge{top:40px;right:9px;font-size:9px;padding:3px 6px}.playbar #contactMenu{font-size:9px;padding:5px}.viewbar{min-height:36px}.coach-card span{font-size:8px}.coach-card p{font-size:10px;margin-top:4px}body.presentation .coach-card{width:55%;padding:10px 12px;bottom:38px}body.presentation .coach-card p{font-size:14px}}
+@media(max-width:480px){#fit{display:none}.views button{font-size:9px}#present{padding:4px 6px}.playbar{gap:4px}body.presentation .coach-card{width:65%;max-height:30%}.coach-card{right:8px;padding:6px 8px}.coach-card p{line-height:1.45}}
+
+
+.motion-badge{position:absolute;top:53px;left:16px;max-width:55%;border-left:2px solid #92d7bf;background:#102b2bdc;padding:5px 8px;color:#b8e9d9;font-size:10px;pointer-events:none;border-radius:4px}
+@media(max-width:800px){.motion-badge{top:40px;left:10px;font-size:8px;max-width:52%}.compare-badge{top:69px}}
