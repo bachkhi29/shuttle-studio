@@ -1,98 +1,83 @@
 <p align="center">
-  <img src="logo/logo-mark-trongsuot.png" alt="Shuttle Studio" width="120">
+  <img src="logo/logo-mark-trongsuot.png" alt="Shuttle Studio" width="100">
+</p>
+<h1 align="center">Shuttle Studio</h1>
+<p align="center"><b>Đặt đội hình. Thiết kế đường cầu. Xem lại chiến thuật.</b></p>
+<p align="center">Sa bàn cầu lông 3D trên trình duyệt · Phiên bản 1.6.0</p>
+<p align="center">
+  <a href="https://bachkhi29.github.io/shuttle-studio/"><b>DÙNG THỬ</b></a> ·
+  <a href="#dùng-offline">TẢI OFFLINE</a> ·
+  <a href="https://github.com/bachkhi29/shuttle-studio/issues/new/choose">BÁO LỖI</a>
 </p>
 
-<h1 align="center">Shuttle Studio</h1>
+![Giao diện Shuttle Studio 1.6 với sân 3D, bảng chỉnh pha và thanh phát cố định](docs/screenshot-v160.jpg)
 
-<p align="center"><b>Mô phỏng chiến thuật cầu lông 3D ngay trên trình duyệt 
+Shuttle Studio giúp người chơi và người hướng dẫn cầu lông tự dựng tình huống, bố trí người, thiết kế chuỗi cú đánh và phát lại để trao đổi chiến thuật. Giao diện mang phong cách game thể thao; đây là **công cụ minh họa chiến thuật**, không phải game thi đấu hay hệ thống AI phân tích video.
 
-<p align="center">Phiên bản 1.5.0 · Giấy phép MIT · Chạy offline 100%</p>
+## Bắt đầu trong 3 bước
 
-Shuttle Studio là sa bàn cầu lông 3D để bạn **đặt người chơi, thiết kế chuỗi cú đánh và di chuyển, rồi phát lại** để giảng giải chiến thuật. Mọi dữ liệu do bạn tự thiết lập — không AI nhận dạng video, không tài khoản, không máy chủ.
+1. **Mở mẫu:** vào **Menu → Mẫu đơn / Mẫu đôi**, hoặc bắt đầu từ mẫu đang hiển thị.
+2. **Chỉnh trên sân:** chọn một thẻ pha, kéo người, bấm sân đối phương để đặt điểm cầu. Kéo đường vàng hoặc thanh độ vồng để điều chỉnh quỹ đạo.
+3. **Xem và lưu:** bấm **Phát**, bật **Lặp pha** nếu muốn xem kỹ; bấm **Lưu file** để giữ chiến thuật dưới dạng JSON.
 
-![Giao diện Shuttle Studio](docs/screenshot-ui.png)
+> Bấm một thẻ pha luôn dừng phát để chỉnh. Chỉ nút **Phát** mới bắt đầu chạy lại.
 
-## Dùng thử ngay
+## Có gì trong app?
 
-- **Bản web (GitHub Pages):** https://bachkhi29.github.io/shuttle-studio/
-- **Chạy trên máy, không cần mạng:** tải file **`MO_UNG_DUNG.html`** trong repo này (hoặc bản ZIP ở mục Releases), mở bằng Chrome/Edge là dùng ngay. Toàn bộ ứng dụng nằm trong đúng 1 file HTML.
-- **Chạy từ source:** mở `index.html` cùng thư mục với `core.js`, `app.js`, `style.css`.
-
-## Tính năng
-
-**Sa bàn & chuỗi pha**
-- Sân 3D chuẩn tỉ lệ (đơn 5,18 m / đôi 6,10 m × 13,40 m), lưới và vạch kẻ đầy đủ; xoay tự do, góc từ trên, góc sau sân, zoom.
-- Đánh đơn (2 người) và đôi (4 người); kéo người trên sân hoặc nhập tọa độ chính xác; mỗi người luôn bị giữ đúng nửa sân của đội mình.
-- Chuỗi "pha" nối liền nhau: điểm kết thúc của pha trước là điểm bắt đầu của pha sau (cả vị trí lẫn độ cao cầu). Thêm, xóa, nhân bản pha; hoàn tác/làm lại; phát/dừng, tua timeline, lặp, chỉnh tốc độ.
-- 13 loại đường cầu: phông cao sâu, phông lao, bỏ nhỏ, kê lưới, kéo lưới chéo, đập, hất cầu, đánh ngang, chém, chặt, đẩy, giao cầu ngắn, giao cầu cao sâu.
-
-**Uốn đường cầu theo ý muốn**
-- Kéo **trực tiếp đường cầu màu vàng** trên sân 3D hoặc trong biểu đồ mặt cắt: lên/xuống thay độ vồng, kéo ngang dời **vị trí đỉnh** của quỹ đạo.
-- Đỉnh lệch sớm cho đường lài, rơi nhanh (chặt cầu, drive); lệch muộn cho phông treo cao rồi rơi thẳng. App cảnh báo khi đường cầu thấp hơn lưới.
-
-**Tùy chỉnh nhân vật**
-- Tay cầm vợt **trái/phải** cho từng người.
-- 4 kiểu tóc (Ngắn, Dựng, Dài, Búi) và bảng màu cho **áo, quần, giày, da, tóc** — kèm ô chọn màu tự do; chép thiết kế cho đồng đội trong một cú bấm (chế độ đôi).
-
-**Dự án & chia sẻ**
-- Lưu/mở file JSON (định dạng có kiểm tra hợp lệ), tự lưu dự phòng trong trình duyệt.
-- Mẫu chiến thuật đơn và đôi có sẵn; thống kê số pha/loại cầu/người đánh.
-- Lật ngang chiến thuật, đổi đầu sân, xuất ảnh sân PNG, chế độ toàn màn hình để trình chiếu.
-
-![Góc nhìn 3D với nhân vật đã tùy chỉnh](docs/screenshot-3d.png)
-
-## Điều khiển & phím tắt
-
-| Việc cần làm | Thao tác |
+| Công việc | Tính năng |
 |---|---|
-| Xoay góc nhìn | Chuột phải + kéo |
+| Dựng tình huống | Đơn / đôi; sân đúng tỉ lệ; giữ người ở nửa sân của đội mình |
+| Thiết kế đường cầu | 13 loại cầu; kéo trực tiếp độ vồng và vị trí đỉnh; nối điểm cuối pha trước vào pha sau |
+| Xem lại | Phát / dừng, tua, tốc độ 0.25×–2×, lặp chuỗi hoặc lặp riêng một pha |
+| Tùy chỉnh người chơi | Tay trái / phải, kiểu tóc, màu áo, quần, giày, da và tóc |
+| Trình bày | Góc 3D, từ trên, sau sân; chế độ Tập trung; toàn màn hình; xuất ảnh PNG |
+| Quản lý chiến thuật | Lưu / mở JSON, tự lưu trên trình duyệt, hoàn tác / làm lại, mẫu đơn / đôi, thống kê |
+
+Bản 1.6 sửa lỗi vẽ đảo tay cầm vợt, tách tab **CHIẾN THUẬT / NHÂN VẬT** và giữ thanh phát cùng danh sách pha ở cuối màn hình. Tay trái/phải tính theo **cơ thể nhân vật**, không theo bên trái/phải của màn hình. Xem [lịch sử cập nhật](CHANGELOG.md).
+
+## Điều khiển
+
+| Thao tác | Điều khiển |
+|---|---|
+| Xoay sân | Chuột phải + kéo |
 | Di chuyển người | Chuột trái + kéo nhân vật |
-| Đặt điểm cầu | Bấm trái vào sân trống phía đối phương |
-| Uốn đường cầu | Kéo đường vàng trên sân hoặc trên biểu đồ mặt cắt |
-| Zoom | Lăn chuột hoặc nút +/− |
-| Phát / dừng | Phím `Space` |
-| Chuyển pha | Phím `←` / `→` |
-| Dừng để chỉnh pha đang xem | `Esc` |
+| Đặt điểm nhận cầu | Bấm sân trống phía đối phương |
+| Uốn đường cầu | Kéo đường vàng hoặc đồ thị mặt cắt |
+| Thu / phóng | Lăn chuột hoặc nút − / + |
+| Phát / dừng | `Space` |
+| Chuyển pha và dừng | `←` / `→` hoặc nút ‹ / › |
+| Chỉnh pha đang xem | `Esc` |
 | Hoàn tác / làm lại | `Ctrl+Z` / `Ctrl+Shift+Z` |
+
+## Dùng offline
+
+1. Mở [MO_UNG_DUNG.html](MO_UNG_DUNG.html) trên GitHub, bấm **Download raw file** để tải về. Hoặc chọn **Code → Download ZIP** rồi giải nén.
+2. Mở file bằng Chrome hoặc Edge. Bản HTML gộp hoạt động độc lập, không cần cài Node.js hay Python.
+3. Bấm **Lưu file** trong app để sao lưu chiến thuật. Dữ liệu tự lưu chỉ nằm trong trình duyệt; mở bản web và bản offline có thể sử dụng vùng lưu khác nhau.
+
+Không cần tài khoản hoặc máy chủ xử lý. Bản web cần mạng để tải trang; file HTML tải về có thể chạy offline.
 
 ## Phát triển
 
-Yêu cầu: Node.js (chỉ để chạy test) và Python 3 (chỉ để build lại bản gộp).
+Source dùng HTML, CSS và JavaScript thuần. Chạy test với Node.js 22; đóng gói bằng Python 3.12:
 
 ```sh
-npm install   # cài jsdom cho bộ test
-npm test      # 58 bài kiểm thử logic + giao diện
-python build.py   # sửa source xong chạy lệnh này để tạo lại MO_UNG_DUNG.html
+npm ci
+python build.py
+npm test
 ```
 
-Cấu trúc thư mục:
+Xem [hướng dẫn phát triển và GitHub Pages](docs/DEVELOPMENT.md), [kết quả kiểm tra](QA.md) và [ngữ cảnh bàn giao](CONTEXT_AI.md).
 
-```
-index.html        Khung giao diện
-style.css         Toàn bộ CSS
-core.js           Logic thuần: hình học sân, quỹ đạo cầu, dữ liệu, kiểm tra hợp lệ (không phụ thuộc DOM)
-app.js            Giao diện, vẽ Canvas 2D theo phép chiếu 3D, tương tác kéo thả
-MO_UNG_DUNG.html  Bản gộp 1 file để dùng ngay (sinh ra bởi build.py — đừng sửa tay)
-build.py          Script đóng gói
-examples/         Hai chiến thuật mẫu (đơn/đôi) dạng JSON
-tests/            Bộ test Node + jsdom
-logo/             Bộ logo chính thức và các kích thước icon
-docs/             Ảnh minh họa cho README
-```
+## Giới hạn
 
-Định dạng dữ liệu: file JSON `format: "shuttle-tactics"`, `version: 2`. Mỗi pha gồm người đánh, điểm đến, loại cầu, độ vồng (`height`), vị trí đỉnh (`peak`, 0.1–0.9), độ cao điểm nhận, thời lượng, vị trí cuối của 4 người và ghi chú. Ngoại hình nhân vật nằm ở trường `appearance` (màu áo/quần/giày/da/tóc, kiểu tóc, tay vợt). File của các bản cũ (kể cả 1.0) vẫn mở được; mở file lạ hoặc hỏng sẽ bị từ chối thay vì làm hỏng dữ liệu hiện tại.
+- Đường cầu phục vụ minh họa; chưa mô phỏng chính xác lực cản không khí, xoáy cầu hoặc kỹ thuật vung vợt.
+- Hình sân và người được vẽ bằng Canvas 2D với phép chiếu 3D; che khuất là xấp xỉ, không dùng WebGL.
+- Chưa xuất video hoặc tự chấm luật thi đấu. Máy tính với chuột là thiết bị sử dụng chính; màn hình nhỏ dùng bảng chỉnh cuộn riêng.
+- Kiểm thử tự động không bảo đảm ứng dụng không còn lỗi trên mọi trình duyệt hoặc thiết bị.
 
-## Giới hạn hiện tại
+## Đóng góp
 
-- Quỹ đạo cầu là mô hình minh họa (bump hai nửa parabol), không mô phỏng vật lý, xoáy cầu hay lực cản không khí.
-- Hình 3D vẽ bằng Canvas 2D với phép chiếu tự viết, không dùng WebGL; thứ tự che khuất là xấp xỉ.
-- Chưa xuất video, chưa có chấm luật thi đấu đầy đủ. Thiết bị chính là máy tính; điện thoại xem được nhưng thao tác kéo sẽ khó hơn.
+Dự án cá nhân của **Lý Đình Bách**, phát triển để học và chia sẻ với cộng đồng cầu lông. Khi [báo lỗi](https://github.com/bachkhi29/shuttle-studio/issues/new/choose), vui lòng ghi phiên bản, trình duyệt, các bước tái hiện và ảnh hoặc JSON mẫu nếu có.
 
-
-## Giấy phép
-
-MIT — xem file [LICENSE](LICENSE). Bạn được tự do dùng, sửa và chia sẻ lại; ghi nguồn là một lời cảm ơn đẹp.
-
-## Ghi chú
-
-Dự án cá nhân làm bằng "vibe coding" để học và để chia sẻ với cộng đồng cầu lông. Góp ý và báo lỗi xin mở **Issue** trên GitHub.
+Giấy phép: [MIT](LICENSE).

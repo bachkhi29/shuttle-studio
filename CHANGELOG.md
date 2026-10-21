@@ -1,3 +1,14 @@
+# 1.6.0 — Giao diện game & sửa tay vợt
+
+- Sửa hệ trục ngang của nhân vật: tay phải/trái đúng theo cơ thể ở cả hai đầu sân; không đảo dữ liệu appearance đã lưu.
+- Thêm chi tiết mặt và cổ áo để thấy rõ hướng nhìn của nhân vật.
+- Giao diện navy–hồng–mint, tiêu đề in hoa có chọn lọc, thanh phát và timeline cố định.
+- Tab CHIẾN THUẬT / NHÂN VẬT: chỉnh ngoại hình ngay khi đang xem một pha.
+- Chế độ Tập trung ẩn bảng chỉnh, nút pha trước/tiếp, đếm số pha, tốc độ 0.25× và lặp riêng pha.
+- Sửa kết thúc thao tác kéo đồ thị khi pointer bị hủy; cập nhật designer trực tiếp, bỏ MutationObserver dư thừa.
+- README, hướng dẫn, lockfile, mẫu báo lỗi và GitHub Actions cho test/build.
+- Không đổi schema JSON v2; vẫn hỗ trợ file cũ.
+
 # 1.5.0
 
 - Tay cầm vợt Trái/Phải cho từng người chơi (mục Tùy chỉnh nhân vật): cánh tay và vợt vẽ đúng phía tay thuận, lưu trong appearance.hand.
