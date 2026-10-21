@@ -78,6 +78,5 @@ Xem [hướng dẫn phát triển và GitHub Pages](docs/DEVELOPMENT.md), [kết
 
 ## Đóng góp
 
-Dự án cá nhân của **Lý Đình Bách**, phát triển để học và chia sẻ với cộng đồng cầu lông. Khi [báo lỗi](https://github.com/bachkhi29/shuttle-studio/issues/new/choose), vui lòng ghi phiên bản, trình duyệt, các bước tái hiện và ảnh hoặc JSON mẫu nếu có.
-
+Dự án cá nhân vibe coding của **Bách**, phát triển để học và chia sẻ với cộng đồng cầu lông.
 Giấy phép: [MIT](LICENSE).
