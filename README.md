@@ -3,14 +3,14 @@
 </p>
 <h1 align="center">Shuttle Studio</h1>
 <p align="center"><b>Đặt đội hình. Thiết kế đường cầu. Xem lại chiến thuật.</b></p>
-<p align="center">Sa bàn cầu lông 3D trên trình duyệt · Phiên bản 1.6.0</p>
+<p align="center">Sa bàn cầu lông 3D trên trình duyệt · Phiên bản 1.7.0</p>
 <p align="center">
   <a href="https://bachkhi29.github.io/shuttle-studio/"><b>DÙNG THỬ</b></a> ·
   <a href="#dùng-offline">TẢI OFFLINE</a> ·
   <a href="https://github.com/bachkhi29/shuttle-studio/issues/new/choose">BÁO LỖI</a>
 </p>
 
-![Giao diện Shuttle Studio 1.6 với sân 3D, bảng chỉnh pha và thanh phát cố định](docs/screenshot-v160.jpg)
+![Giao diện Shuttle Studio 1.7 với sân 3D, bảng chỉnh pha và thanh phát cố định](docs/screenshot-v170.jpg)
 
 Shuttle Studio giúp người chơi và người hướng dẫn cầu lông tự dựng tình huống, bố trí người, thiết kế chuỗi cú đánh và phát lại để trao đổi chiến thuật. Giao diện mang phong cách game thể thao; đây là **công cụ minh họa chiến thuật**, không phải game thi đấu hay hệ thống AI phân tích video.
 
@@ -34,6 +34,19 @@ Shuttle Studio giúp người chơi và người hướng dẫn cầu lông tự
 | Quản lý chiến thuật | Lưu / mở JSON, tự lưu trên trình duyệt, hoàn tác / làm lại, mẫu đơn / đôi, thống kê |
 
 Bản 1.6 sửa lỗi vẽ đảo tay cầm vợt, tách tab **CHIẾN THUẬT / NHÂN VẬT** và giữ thanh phát cùng danh sách pha ở cuối màn hình. Tay trái/phải tính theo **cơ thể nhân vật**, không theo bên trái/phải của màn hình. Xem [lịch sử cập nhật](CHANGELOG.md).
+
+## Mới trong 1.7
+
+- Animation khớp tay/chân cho phông, đập, hất cầu, bỏ nhỏ, kê lưới, đánh ngang và trái tay; bật nhảy khi đập cao, hạ trọng tâm khi phòng thủ.
+- Cầu quay theo hướng bay; trạng thái quay và tư thế được giữ khi dừng/tua.
+- Tab **MINH HỌA**: mũi tên di chuyển, bóng vị trí trước, vùng mục tiêu/khoảng trống, ghi chú từng pha, so sánh hai đường cầu A/B.
+- **Tiếp xúc**: xem điểm đánh/nhận, tự dừng ở cuối pha. **Trình bày**: sân lớn và ghi chú, Esc để thoát.
+
+### Thử animation
+
+Chọn pha → **Tiếp xúc → Điểm đánh** để xem tư thế tiếp xúc, hoặc bấm **Phát** để xem chuyển động. Trong **CHI TIẾT & TỌA ĐỘ**, chọn tự động / thuận tay / trái tay và bật nhảy khi đập. **Menu → Animation nhân vật** cho phép bật/tắt mô phỏng. Đánh trái tay vẫn cầm vợt bằng tay thuận.
+
+Để vẽ vùng, mở **MINH HỌA**, chọn vùng mục tiêu hoặc khoảng trống rồi kéo trên sân. Để so sánh, lưu đường A rồi chỉnh đường B; đây là so sánh quỹ đạo từ cùng điểm đánh, không phải hai đội hình độc lập.
 
 ## Điều khiển
 
@@ -71,7 +84,8 @@ Xem [hướng dẫn phát triển và GitHub Pages](docs/DEVELOPMENT.md), [kết
 
 ## Giới hạn
 
-- Đường cầu phục vụ minh họa; chưa mô phỏng chính xác lực cản không khí, xoáy cầu hoặc kỹ thuật vung vợt.
+- Đường cầu phục vụ minh họa; chưa mô phỏng chính xác lực cản không khí hoặc xoáy cầu. Animation là chuyển động dựng bằng công thức, không phải motion capture.
+- Cú đầu bắt đầu tại thời điểm chạm cầu; tư thế lấy đà xuất hiện ở cuối pha trước nếu hai pha liên kết. Chân chưa có cơ chế bám sàn vật lý; các biến thể cùng nhóm dùng chung nền động tác. Điểm cầu ngoài tầm với được cảnh báo, không kéo dài tay để che lỗi.
 - Hình sân và người được vẽ bằng Canvas 2D với phép chiếu 3D; che khuất là xấp xỉ, không dùng WebGL.
 - Chưa xuất video hoặc tự chấm luật thi đấu. Máy tính với chuột là thiết bị sử dụng chính; màn hình nhỏ dùng bảng chỉnh cuộn riêng.
 - Kiểm thử tự động không bảo đảm ứng dụng không còn lỗi trên mọi trình duyệt hoặc thiết bị.
@@ -80,3 +94,4 @@ Xem [hướng dẫn phát triển và GitHub Pages](docs/DEVELOPMENT.md), [kết
 
 Dự án cá nhân vibe coding của **Bách**, phát triển để học và chia sẻ với cộng đồng cầu lông.
 Giấy phép: [MIT](LICENSE).
+

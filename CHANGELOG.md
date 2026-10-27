@@ -1,3 +1,13 @@
+# 1.7.0 — Minh họa chiến thuật & animation
+
+- Thêm bảy công cụ: mũi tên di chuyển, vùng sân, bóng vị trí trước, dừng tiếp xúc, trình bày, so sánh đường A/B và ghi chú theo pha.
+- Cầu xoay theo tiếp tuyến quỹ đạo và chuyển hướng ngắn sau tiếp xúc; tua cho kết quả xác định.
+- Khớp tay/chân có chiều dài cố định, động tác theo nhóm cú đánh, trái/thuận tay, bật nhảy đập và hạ trọng tâm phòng thủ; cảnh báo điểm chạm ngoài tầm với.
+- Chuẩn bị ở cuối pha liên kết nối với tư thế chạm cầu của pha tiếp theo. Không đổi tay cầm khi đánh trái tay.
+- JSON v2 mở rộng trường tùy chọn zones, comparison, technique, jump; giữ hỗ trợ file cũ, undo/redo, đổi đầu sân và lật ngang.
+- Xuất PNG gồm chú thích và chú giải so sánh. Ghi chú lưu ngay khi nhập.
+- 76 kiểm thử đạt, bổ sung kiểm tra hình học renderer và tính liên tục tại tiếp xúc.
+
 # 1.6.0 — Giao diện game & sửa tay vợt
 
 - Sửa hệ trục ngang của nhân vật: tay phải/trái đúng theo cơ thể ở cả hai đầu sân; không đảo dữ liệu appearance đã lưu.
